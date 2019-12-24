@@ -72,7 +72,7 @@ return [
     | Supported: "IndiraK".
     |
     */
-    'font' => base_path('vendor/bonecms/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
+    'font' => base_path('vendor/mehedi/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
 
     /*
     |--------------------------------------------------------------------------

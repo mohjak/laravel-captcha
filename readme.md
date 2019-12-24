@@ -1,17 +1,11 @@
 # Captcha integration for the Laravel 5
 Package information:
 
-[![Latest Stable Version](https://poser.pugx.org/bonecms/laravel-captcha/v/stable)](https://packagist.org/packages/bonecms/laravel-captcha)
-[![Total Downloads](https://poser.pugx.org/bonecms/laravel-captcha/downloads)](https://packagist.org/packages/bonecms/laravel-captcha)
-[![License](https://poser.pugx.org/bonecms/laravel-captcha/license)](https://packagist.org/packages/bonecms/laravel-captcha)
-
-For Laravel 5.3 and below - [v1.1](https://github.com/igoshev/laravel-captcha/tree/1.1)
-
 ## Installing Laravel Captcha Composer Package
 Note: If you do not have Composer yet, you can install it by following the instructions on https://getcomposer.org
 #### Step 1. Install package
 ```bash
-composer require bonecms/laravel-captcha
+composer require mehedi/laravel-captcha
 ```
 #### Step 2 for Laravel 5.5 and below. Register the Laravel Captcha service provider
 {LARAVEL_ROOT}/config/app.php:
@@ -39,15 +33,15 @@ composer require bonecms/laravel-captcha
 ## Using Laravel Captcha
 Generate a Captcha markup in your Controller:
 ```php
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class MyController extends Controller 
+class MyController extends Controller
 {
-    public function getExample() 
+    public function getExample()
     {
         return view('myView');
     }
@@ -63,16 +57,16 @@ Showing a Captcha in a View:
 ```
 Check user input during form submission:
 ```php
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class MyController extends Controller 
+class MyController extends Controller
 {
-    public function getExample() 
+    public function getExample()
     {
         return view('myView');
     }
@@ -166,7 +160,7 @@ return [
     | Supported: "IndiraK".
     |
     */
-    'font' => base_path('vendor/bonecms/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
+    'font' => base_path('vendor/mehedi/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
 
     /*
     |--------------------------------------------------------------------------
@@ -251,11 +245,11 @@ return [
     |
     */
     'inputId' => 'captcha',
-    
+
 ];
 ```
 ### Localization
-Supported languages: 
+Supported languages:
 * Arabic
 * Chinese
 * Dutch
